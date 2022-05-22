@@ -1,0 +1,102 @@
+/* General styles */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    font-size: 1.8em;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+/* Site-container */
+
+.site-container {
+    max-width: 100%;
+    padding: 5.5em 2em 2em;
+    height: 100vh;
+    background: #8ec61d;
+    transition: transform 0.3s ease-in-out 0.1s;
+}
+
+/* Button */
+
+.btn {
+    font-size: 1.5em;
+    background: transparent;
+    border: 2px solid #111;
+    padding: 1em;
+    text-align: center;
+    margin-left: 3em;
+    cursor: pointer;
+    transition: background, color 0.2s ease-in;
+}
+
+.btn:hover,
+.btn:active {
+    background: #111;
+    color: #8ec61d;
+}
+
+.btn:active,
+.btn:focus {
+    outline: 2px solid rgb(79, 103, 30);
+}
+
+/* Offsite container */
+
+.offsite-container {
+    position: fixed;
+    top: 0;
+    left: -14rem;
+    width: 14rem;
+    bottom: 0;
+    background: #333;
+    height: 100vh;
+    padding-top: 1em;
+    transition: transform 0.3s ease-in-out 0.1s;
+}
+
+.is-shown .offsite-container,
+.is-shown .site-container {
+    transform: translateX(14rem);
+}
+
+/* Nav */
+
+.nav {
+    margin-top: 6rem;
+}
+
+.nav_link {
+    display: inline-block;
+    color: #fff;
+    padding: 0.5em 0;
+    transition: color 0.3s ease-in-out;
+}
+.nav_lists {
+    padding: 0;
+    text-align: center;
+}
+
+.nav_lists li {
+    position: relative;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav_lists li:hover {
+    background: #000;
+}
+
+.nav_lists li:hover .nav_link {
+    color: #8ec61d;
+}
