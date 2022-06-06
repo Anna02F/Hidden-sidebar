@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
@@ -99,4 +103,12 @@ h1 {
 
 .nav_lists li:hover .nav_link {
     color: #8ec61d;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }
 }
